@@ -1,0 +1,42 @@
+header{
+    grid-area: h;
+    background-image: url('img/dandelion.jpg');
+}
+nav{
+    grid-area: :n;
+    backround-image: url('img/dand2.jpg')
+}
+
+aside{
+    grid-area: as;
+    background-image: url('img/dand3.jpg');
+}
+
+footer{
+    grid-area: f;
+    background-image: url('img/dandy.gif');
+}
+
+article{
+    grid-area: ar;
+    background-image: url('img/dandy2.gif');
+}
+
+main{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    ' h n n'
+    'as f ar';
+}
+main>*{
+    height:200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: cover;
+    color: white
+    text-align: right;
+}
+nac{
+    text-align: left;
+}
+
